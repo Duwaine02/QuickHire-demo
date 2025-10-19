@@ -3,17 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QuickHire</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>QuickHire — Hire Fast. Work Smarter.</title>
+  <link rel="stylesheet" href="stylesheet.css" />
 </head>
 <body>
   <header>
-    <h1>QuickHire</h1>
-    <p>Find reliable help when you need it most</p>
+    <div class="container">
+      <h1 class="logo">QuickHire</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Find Work</a>
+        <a href="#">Post a Job</a>
+        <a href="#">About</a>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hire Fast. Work Smarter.</h2>
+      <p>Find reliable workers for urgent jobs — all in one place.</p>
+      <button id="scrollToForm">Post a Job</button>
+    </div>
+  </section>
+
   <main>
-    <section class="post-job">
+    <section id="post-job">
       <h2>Post a Job</h2>
       <form id="jobForm">
         <input type="text" id="jobTitle" placeholder="Job Title (e.g., Need a plumber urgently)" required />
@@ -23,16 +38,27 @@
       </form>
     </section>
 
-    <section class="available-workers">
+    <section id="posted-jobs">
+      <h2>Recently Posted Jobs</h2>
+      <div id="jobList"></div>
+    </section>
+
+    <section id="available-workers">
       <h2>Available Workers</h2>
-      <div id="workerList">
-    
-      </div>
+
+      <input 
+        type="text" 
+        id="filterLocation" 
+        placeholder="Filter by location (e.g., Cape Town)"
+        class="filter-input"
+      />
+
+      <div id="workerList"></div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 QuickHire — Connect Fast, Work Smart</p>
+    <p>© 2025 QuickHire | Empowering Fast Connections Between Work & Talent</p>
   </footer>
 
   <script src="script.js"></script>

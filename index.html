@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickHire</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>QuickHire</h1>
+    <p>Find reliable help on short notice</p>
+  </header>
+
+  <main>
+    <section id="post-job">
+      <h2>Post a Job</h2>
+      <form id="jobForm">
+        <input type="text" id="jobTitle" placeholder="Job Title (e.g., Need a cleaner)" required />
+        <input type="text" id="location" placeholder="Location (e.g., Cape Town)" required />
+        <textarea id="jobDetails" placeholder="Job Details..." rows="3" required></textarea>
+        <button type="submit">Post Job</button>
+      </form>
+    </section>
+
+    <section id="available-workers">
+      <h2>Available Workers</h2>
+      <div id="workerList">
+        <!-- Workers will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 QuickHire | Connect Fast, Work Smart</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
